@@ -1,41 +1,70 @@
-
-
-import { RiWhatsappLine } from "react-icons/ri";
 import Form from '../component/Form'
-import logo1 from '../image/logo1.png'
-import {NavLink} from 'react-router-dom'
-
-
+import logo from '../image/logo1.png'
 
 const header = () => {
   return (
     <>
-      <section className='main-con'>
-        <div className='container'>
-          <header>
-            <a href="" className='logo'><img src={logo1} alt="" /></a>
-            <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
-          </header>
-          <div className='content'>
-            <h1>Adersh Park Height</h1>
-            <p>Luxurius 2 and 3 BHK Apartments by Adersh Group @ Gunjur,varthur East Bangalore</p>
-            <a href="">Reade more</a>
+      <div className='bg'>
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="container">
+            <a className="navbar-brand" href="#"><img src={logo} alt="" /></a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Link</a>
+                </li>
+                <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a className="dropdown-item" href="#">Action</a></li>
+                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                    <li><hr className="dropdown-divider" /></li>
+                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className='header-form'>
-            <Form />
+        </nav>
+        <div className='a'>
+          <div className='hero-con'>
+            <div className='containt'>
+              <h3>Adarsh heights</h3>
+              <hr />
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea laboriosam quos facere eos saepe non laborum dolorem? Minima sed quod eaque, eum ratione, repudiandae reiciendis ipsam sapiente quidem corrupti vitae dolorem consequatur quo optio ipsum expedita quisquam? Dicta, dolor ea!</p>
+            
+             
+            </div>
+            <div className='form-con'>
+
+              <form>
+                <div className="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Name</label>
+                  <input type="text" name='name' className="form-control" id="exampleInputPassword1" />
+                </div>
+                <div className="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+
+                </div>
+                <div className="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                  <input type="phone" className="form-control" id="exampleInputPassword1" />
+                </div>
+                <button type="submit" className="btn btn-block btn-light">Submit</button>
+              </form>
+            </div>
           </div>
-          {/* <div className='imgbx'>
-          <img src={image1 } alt="" />
-          </div> */}
-          <ul className='sci'>
-            <li><a href=""><RiWhatsappLine /></a></li>
-          </ul>
         </div>
-      </section>
+      </div>
     </>
   )
 }

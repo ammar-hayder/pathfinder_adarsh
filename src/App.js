@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import Home from "./component/Home"
 import Header from './component/Header';
 import Footer from './component/Footer';
@@ -8,8 +9,9 @@ import Location from './component/Location'
 import Contact from './component/Contact'
 import Cardbar2 from './component/Cardbar2';
 import About from './component/About'
-import Mapbar from './component/Mapbar'
+
 import Multipal from './component/Multipal';
+import Com from './component/Com'
 import {
   BrowserRouter,
   Routes,
@@ -24,18 +26,21 @@ function App() {
 
 
     <BrowserRouter>
-    <Routes>
+      {/* <Routes>
       <Route path='/' element={<Header />}/>
       <Route path='/about' element={<About />}/>
       <Route path='/contact' element={<Contact />}/>
         
-    </Routes>
-      {/* <Header /> */}
+    </Routes> */}
+
+  
+      <Header />
       <Cardbar />
-      <About />
+      <Com/>
       <Cardbar2 />
-      <Multipal />
-      <Mapbar />
+      <About />
+      
+      <Multipal /> 
       <Location />
       <Contact />
       <Footer />
