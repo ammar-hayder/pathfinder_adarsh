@@ -2,16 +2,12 @@
 import './App.css';
 
 import Home from "./component/Home"
-import Header from './component/Header';
-import Footer from './component/Footer';
-import Cardbar from './component/Cardbar';
-import Location from './component/Location'
-import Contact from './component/Contact'
-import Cardbar2 from './component/Cardbar2';
-import About from './component/About'
+import About from './component/About';
+import Contact from './component/Contact';
+import Nbar from './component/Nbar';
+import Form from './component/Form';
+import Amenities from './component/Amenities';
 
-import Multipal from './component/Multipal';
-import Com from './component/Com'
 import {
   BrowserRouter,
   Routes,
@@ -26,24 +22,18 @@ function App() {
 
 
     <BrowserRouter>
-      {/* <Routes>
-      <Route path='/' element={<Header />}/>
-      <Route path='/about' element={<About />}/>
-      <Route path='/contact' element={<Contact />}/>
-        
-    </Routes> */}
+    <Nbar/>
+    {/* <Form/> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
 
-  
-      <Header />
-      <Cardbar />
-      <Com/>
-      <Cardbar2 />
-      <About />
+      </Routes>
       
-      <Multipal /> 
-      <Location />
-      <Contact />
-      <Footer />
+
+
+
     </BrowserRouter>
 
 

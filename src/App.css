@@ -6,15 +6,22 @@
   background-attachment: fixed;
   max-width: 100vw;
   min-height: 100vh;
+  overflow: overlay;
   
 }
 
 nav{
-  background: rgba(255, 255, 255, 0.2);
+  background: #fff;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+ a.nav-link {
+  color: #1b105b;
+  font-size: 1.3rem;
+}
+
+  
 /* ---------------header section--------------- */
 .a{
   display: flex;
@@ -104,107 +111,6 @@ nav{
   font-size: 1em;
 }
 
-
-
-
-.main-con {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-image: url(./image/image2.jpg);
-  background-attachment: fixed; */
-  
-  
-}
-
-/* .contain {
-  
-  width: calc(100% - 100px);
-  min-height: calc(100vh - 280px);
-  min-height: 300px;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-} */
-
-header {
-  /* position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  width: 100%;
-  padding: 20px 50px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5); */
-  /* border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-header ul {
-  display: flex;
-  margin-top: 15px;
-
-}
-
-header ul li {
-  list-style: none;
-  margin: 0 10px;
-
-}
-
-header ul li a {
-  text-decoration: none;
-  font-weight: 500;
-  padding: 5px 15px;
-  border-radius: 25px;
-}
-
-header ul li a:hover,
-header ul li a.active {
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  ;
-
-}
-
-.content {
-  /* position: absolute; */
-  /* transform: translateX(-10px);
-  width: 50%; */
-  
-
-  /* background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 50px;
-   */
-  
-}
-
-/* .content h1 {
-
-  font-size: 3em;
-}
-
-.content p {
-  font-size: 1.2em
-} */
-
 .content a {
   display: inline-block;
   color: rgb(65, 3, 3);
@@ -219,40 +125,13 @@ header ul li a.active {
 }
 
 .header-form {
-  /* position: absolute; */
-
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   padding: 50px;
   margin-top: 10px;
-
-  /* border-radius: 20px; */
 }
-
-/* .sci {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .sci li {
-  list-style: none;
-} */
-
-/* .sci li a {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-} */
 
 /* -----------------cardbar section start---------------- */
 
@@ -337,15 +216,27 @@ header ul li a.active {
 
 .map-text h3 {
   padding-top: 40px;
+  
 }
 
 .location {
   padding: 40px;
+  background-color: #12264a;
+  
 }
 
 .location h4 {
   text-align: center;
   padding-bottom: 30px;
+  color: white;
+}
+
+.location p{
+  color: #fff;
+}
+.location ul{
+  color: #fff;
+
 }
 /* ------------- .location end -------- */
 
@@ -353,6 +244,7 @@ header ul li a.active {
 /* ---------- contect section start-------- */
 .conte-main {
   background-image: url(./image/image5.jpg);
+ 
   
 
 }
@@ -365,6 +257,7 @@ header ul li a.active {
   background-color: rgba(0, 0, 0, 0.384);
   flex-wrap: wrap;
   gap: 2em;
+  min-height: 50vh;
 
 }
 
@@ -377,6 +270,7 @@ header ul li a.active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   
 
 }
@@ -386,10 +280,18 @@ header ul li a.active {
   align-items: center;
   justify-content: space-around;
   padding: 30px 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #12264ac9;
   box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+  gap: 3rem;
   
+}
 
+.cardbar-con ul{
+  color: #fff;
+}
+.cardbar-con p{
+  color: #fff;
 }
 /* -----------Abaut section start-------- */
 
@@ -425,7 +327,6 @@ header ul li a.active {
 }
 
 .ameni-con {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,7 +334,8 @@ header ul li a.active {
   background-image: url(../src/image/image3.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  
 }
 
 .ameni-cont {
@@ -454,9 +356,6 @@ header ul li a.active {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   padding: 40px;
   flex-direction: column;
-
-
-
 }
 
 .footer p {
@@ -524,6 +423,63 @@ section{
   text-align: center;
   margin: 200px auto;
 }
+
+/* ------------- Scroll bar ---------- */
+
+::-webkit-scrollbar{
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.2);
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #12264a;
+  border-radius: 1rem;
+  border: 0.2rem solid transparent;
+  background-clip: content-box;
+}
+
+/* ------------- Scroll bar end ---------- */
+
+/* ------------- modal start ---------- */
+
+div.modal-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgbox11 img{
+  max-width: 200px;
+  
+}
+
+/* ------------- modal end ---------- */
+
+/* -------- social start-------- */
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-direction: column;
+}
+.social a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.social a:hover {
+  color: rgb(255, 255, 255);
+}
+/* -------- social end-------- */
+/* _____---------------------- mediaquery -------- */
+
 @media (max-width: 928px) {
   .map{flex-direction: column;}
   
@@ -531,5 +487,6 @@ section{
 }
 @media (max-width: 562px) {
   .footer p{font-size: 0.4rem;}
+  .imgbox11{display: none;}
 }
 

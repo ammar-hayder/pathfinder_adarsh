@@ -1,5 +1,9 @@
 import React from 'react'
 import Form from '../component/Form'
+import { FcCallback } from 'react-icons/fc';
+import { FaWhatsapp } from 'react-icons/fa';
+import { IconContext } from "react-icons";
+import ReactWhatsapp from 'react-whatsapp';
 
 const Contact = () => {
     return (
@@ -10,10 +14,12 @@ const Contact = () => {
                         <Form />
 
                     </div>
-                    <div>
-                        <h1>958-03285</h1>
-                        <h1>705832-05</h1>
-                    </div>
+                    <IconContext.Provider value={{ color: "#25D366", className: "global-class-name" }}>
+                        <div className='social'>
+                            <a href=' tel:918200940342'> <FcCallback />  958-03285</a>
+                            <a href=' https://wa.me/918200940342'><FaWhatsapp /> 705832-05</a>
+                        </div>
+                    </IconContext.Provider>
                 </div>
             </div>
         </>
