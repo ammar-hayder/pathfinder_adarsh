@@ -19,7 +19,7 @@ const Home = () => {
       <Com />
       <Cardbar2 />
       <About />
-      <Multipal />
+      {/* <Multipal /> */}
       <Location />
       <Contact />
       <Footer />

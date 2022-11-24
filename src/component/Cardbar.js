@@ -1,32 +1,29 @@
-import React from 'react';
-import image2 from '../image/image1.jpg';
-import 'aos/dist/aos.css';
-import Form from '../component/Form';
+import React from "react";
+import image2 from "../image/image1.jpg";
+import "aos/dist/aos.css";
+import Form from "../component/Form";
 
 const Cardbar = () => {
   return (
-    <>
-      <section className='cardname'>
-        <div className='container1'>
-          <div className='formbox' data-aos="fade-down">
-            <div>
-              <h1>Lobus! Eligendi!</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos quo ratione neque ea veritatis aliquam exercitationem modi harum quia.</p>
-              <Form />
-            </div>
-           
-          </div>
-          <div className='imgbox1'>
-            <img src={image2} alt="image2" />
+    <section className="cardname">
+      <div className="container1">
+        <div className="formbox" data-aos="fade-down">
+          <div>
+            <h1>Lobus! Eligendi!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos
+              quo ratione neque ea veritatis aliquam exercitationem modi harum
+              quia.
+            </p>
+            <Form />
           </div>
         </div>
+        <div className="imgbox1">
+          <img src={image2} alt="image2" />
+        </div>
+      </div>
+    </section>
+  );
+};
 
-
-
-      </section>
-
-    </>
-  )
-}
-
-export default Cardbar
+export default Cardbar;

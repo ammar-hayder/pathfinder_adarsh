@@ -1,46 +1,23 @@
+import "./App.css";
 
-import './App.css';
+import Home from "./component/Home";
+import About from "./component/About";
+import Contact from "./component/Contact";
+import Navbar from "./component/Navbar";
+import Amenities from "./component/Amenities";
 
-import Home from "./component/Home"
-import About from './component/About';
-import Contact from './component/Contact';
-import Nbar from './component/Nbar';
-import Amenities from './component/Amenities';
-
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-
-    
     <BrowserRouter>
-    <Nbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      
-
-
-
     </BrowserRouter>
-
-
-
-
-
-
-
-
-
   );
 }
 

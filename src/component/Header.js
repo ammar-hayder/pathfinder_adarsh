@@ -28,12 +28,14 @@ const Header = () => {
             </div>
           </div>
         </nav> */}
-        <div className='a'>
+        <div className='container'>
           <div className='hero-con'>
-            <div className='containt' data-aos="fade-right" >
-              <h3>Adarsh heights</h3>
+            <div className='content' data-aos="fade-right" >
+              <h3>Welcome to ADARSH PARK HEIGHTS</h3>
               <hr />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea laboriosam quos facere eos saepe non laborum dolorem? Minima sed quod eaque, eum ratione, repudiandae reiciendis ipsam sapiente quidem corrupti vitae dolorem consequatur quo optio ipsum expedita quisquam? Dicta, dolor ea!</p>
+              <h4>Gunjur, East Banglore</h4>
+              <br/>
+              
             </div>
             <div className='form-con'>
               <form>
