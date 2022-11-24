@@ -19,7 +19,6 @@ const Home = () => {
       <Com />
       <Cardbar2 />
       <About />
-
       <Multipal />
       <Location />
       <Contact />

@@ -1,6 +1,6 @@
-import logo from '../image/logo1.png';
+// import logo from '../image/logo1.png';
 import 'aos/dist/aos.css';
-import {NavLink} from 'react-router-dom';
+// import {NavLink} from 'react-router-dom';
 
 const Header = () => {
 
@@ -38,15 +38,15 @@ const Header = () => {
             <div className='form-con'>
               <form>
                 <div className="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Name</label>
+                  <label htmlFor="exampleInputPassword1" className="form-label">Name</label>
                   <input type="text" name='name' className="form-control" id="exampleInputPassword1" />
                 </div>
                 <div className="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
                 <div className="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                  <label htmlFor="exampleInputPassword1" className="form-label">Mobile</label>
                   <input type="phone" className="form-control" id="exampleInputPassword1" />
                 </div>
                 <button type="submit" className="btn btn-block btn-light">Submit</button>

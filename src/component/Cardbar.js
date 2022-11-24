@@ -1,9 +1,7 @@
-import React from 'react'
-import image2 from '../image/image1.jpg'
-
-import AOS from 'aos';
+import React from 'react';
+import image2 from '../image/image1.jpg';
 import 'aos/dist/aos.css';
-import Form from '../component/Form'
+import Form from '../component/Form';
 
 const Cardbar = () => {
   return (
@@ -19,7 +17,7 @@ const Cardbar = () => {
            
           </div>
           <div className='imgbox1'>
-            <img src={image2} alt="" />
+            <img src={image2} alt="image2" />
           </div>
         </div>
 

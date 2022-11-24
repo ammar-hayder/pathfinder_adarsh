@@ -25,18 +25,18 @@ const Form = () => {
           <div className='form-con'>
             <form action="">
               <div className="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input type="text" name='name' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
+                <input type="text" name='name' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
               </div>
               <div className="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="text" c name='email' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                <input type="text" c name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
               </div>
               <div className="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Mobile</label>
-                <input type="text" name='phone' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <label htmlFor="exampleInputEmail1" classNmae="form-label">Mobile</label>
+                <input type="text" name='phone' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary">Submit</button>
             </form>
           </div>
             <div className='imgbox11'>

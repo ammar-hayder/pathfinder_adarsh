@@ -9,7 +9,7 @@ const Mapbar = () => {
                 <h3>Adarsh Park Heights Masterplan</h3>
             </div>
             <div className='map-img'>
-                <img src={map1} alt="" />
+                <img src={map1} alt="map1" />
             </div>
            </div>
         </>

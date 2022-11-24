@@ -7,7 +7,7 @@ import data from './data'
 const Multipal = () => {
   return (
     <>
-      {data.map((val) => {
+      {data.map((val) => { 
         return (
           <Amenities
             key={val.id}

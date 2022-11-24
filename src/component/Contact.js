@@ -3,7 +3,7 @@ import Form from '../component/Form'
 import { FcCallback } from 'react-icons/fc';
 import { FaWhatsapp } from 'react-icons/fa';
 import { IconContext } from "react-icons";
-import ReactWhatsapp from 'react-whatsapp';
+
 
 const Contact = () => {
     return (
