@@ -1,6 +1,7 @@
 // import logo from '../image/logo1.png';
 import 'aos/dist/aos.css';
 // import {NavLink} from 'react-router-dom';
+import logo2 from '../image/logo2.png'
 
 const Header = () => {
 
@@ -34,6 +35,7 @@ const Header = () => {
               <h3>Welcome to ADARSH PARK HEIGHTS</h3>
               <hr />
               <h4>Gunjur, East Banglore</h4>
+              <img className='img-f' src={logo2} alt="logo2" />
               <br/>
               
             </div>
