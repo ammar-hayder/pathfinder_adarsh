@@ -44,10 +44,10 @@ a.nav-link {
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 30px;
   border-radius: 5px;
-  max-width: 600px;
+  max-width: 700px;
 }
 
-.img-f{
+.img-f {
   width: 25rem;
   /* padding-left: 5rem; */
 }
@@ -125,7 +125,17 @@ a.nav-link {
   padding: 50px;
   margin-top: 10px;
 }
-
+.features {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px 0px 20px 20px;
+  border-radius: 5px;
+  font-size: 1.13rem;
+  color: white;
+}
+.features p {
+  margin-bottom: 0px;
+}
 /* -----------------cardbar section start---------------- */
 
 .cardname {
@@ -451,7 +461,7 @@ div.modal-body {
 
 /* _____---------------------- mediaquery -------- */
 @media (max-width: 1199px) {
-  .form-con{
+  .form-con {
     /* margin-left: 6rem; */
   }
 }
@@ -473,10 +483,10 @@ div.modal-body {
   .social a {
     font-size: 2rem;
   }
-  .content{
+  .content {
     max-width: 400px;
   }
-  .img-f{
+  .img-f {
     width: 15rem;
   }
 }
@@ -489,7 +499,7 @@ div.modal-body {
   .footer p {
     font-size: 0.2rem;
   }
-  .content h3{
+  .content h3 {
     font-size: 1.5em;
   }
 }
