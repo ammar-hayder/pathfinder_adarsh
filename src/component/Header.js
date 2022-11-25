@@ -5,6 +5,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 import Form from "../component/Form";
 // import {NavLink} from 'react-router-dom';
 import logo3 from '../image/logo3.png'
+import Capcha from './Capcha'
 
 const Header = () => {
   return (
@@ -40,12 +41,14 @@ const Header = () => {
               {/* <img className='img-f' src={logo3} alt="logo2" /> */}
               <br />
               <div style={{ "text-align": "center" }}>
-              <img className='img-f' src={logo3} alt="logo2" />
+                <img className='img-f' src={logo3} alt="logo2" />
               </div>
             </div>
             <div className="form-con">
               <form>
                 <div className="mb-3">
+                  <h4>We are wating</h4>
+                  <hr />
                   <label htmlFor="exampleInputPassword1" className="form-label">
                     Name
                   </label>
@@ -77,6 +80,9 @@ const Header = () => {
                     id="exampleInputPassword1"
                   />
                 </div>
+                <div className="cap">
+                  <Capcha />
+                </div>
                 <button type="submit" className="btn btn-block btn-light">
                   Submit
                 </button>
@@ -105,7 +111,7 @@ const Header = () => {
               </Col>
             </Row>
             <Row> <Col><Form /></Col></Row>
-           
+
           </Container>
         </div>
       </div>

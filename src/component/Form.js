@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import image2 from '../image/image1.jpg'
+import Capcha from '../component/Capcha';
 
 const Form = () => {
   const [show, setShow] = useState(false);
@@ -14,12 +15,13 @@ const Form = () => {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-      Request Brochure
+        Request Brochure
       </Button>
 
       <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
+
         </Modal.Header>
         <Modal.Body>
           <div className='form-con'>
@@ -36,12 +38,15 @@ const Form = () => {
                 <label htmlFor="exampleInputEmail1" classNmae="form-label">Mobile</label>
                 <input type="text" name='phone' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
               </div>
+
+              <Capcha />
+
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
           </div>
-            <div className='imgbox11'>
-              <img src={image2} alt="" />
-            </div>
+          <div className='imgbox11'>
+            <img src={image2} alt="" />
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

@@ -18,6 +18,12 @@ a.nav-link {
   color: #1b105b;
   font-size: 1.3rem;
 }
+.features button{
+  width: 50%;
+  margin-left: 15rem;
+  margin-top: 1rem;
+
+}
 
 /* ---------------header section--------------- */
 .a {
@@ -32,7 +38,7 @@ a.nav-link {
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 2em;
   gap: 2em;
 }
@@ -44,7 +50,7 @@ a.nav-link {
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 30px;
   border-radius: 5px;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .img-f {
@@ -69,8 +75,8 @@ a.nav-link {
   /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05); */
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  width: 400px;
-  padding: 40px;
+  width: 500px;
+  padding: 20px;
 }
 
 .form-con input {
@@ -136,10 +142,19 @@ a.nav-link {
 .features p {
   margin-bottom: 0px;
 }
+
+/* -----capcha------ */
+
+.cap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
 /* -----------------cardbar section start---------------- */
 
 .cardname {
-  background-image: url(./image/image3.jpg);
+  background-image: url(./image/adarsh-park-heights-project-project-large-image1.webp);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -151,7 +166,7 @@ a.nav-link {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
+ 
   flex-wrap: wrap;
   gap: 1em;
   padding-top: 80px;
@@ -161,7 +176,7 @@ a.nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
+  padding: 2em;
   max-width: 550px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -173,12 +188,15 @@ a.nav-link {
 
 .formbox h1 {
   padding-right: 10px;
-  color: #12264a;
+  color: #153e8b;
+  padding-bottom: 25px;
 }
 
-.formbox p {
-  color: #12264a;
+.formbox ul {
+  color: #153e8b;
   margin-bottom: 40px;
+  
+  
 }
 
 .imgbox1 img {
@@ -193,7 +211,10 @@ a.nav-link {
   text-decoration: none;
   font-weight: 100;
 }
+.cardbar-form button{
+  width: 100%;
 
+}
 /* --------------------cardbar section end------------ */
 
 /* -------------- location section start------------------ */
